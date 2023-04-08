@@ -1,0 +1,68 @@
+body{
+    background: #FF9F40;
+}
+.game{
+    background: #BF7730;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+    box-shadow: 5px 5px 5px black;
+}
+.submit_city_button{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 15px;
+    width:30%;
+    top:190px;
+    left:155px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #7C4610
+}
+.submit_city_button:hover {
+    text-align: center;
+    background-color: #BF7730; /* Green */
+}
+.btn{
+    display:none;
+    height: 70px;
+}
+.message{
+    font-size: 20px;
+    position: center;
+    font-family: "Lucida Console", Times, serif;
+}
+.cityform{
+    position: absolute;
+    top:40%;
+    right: 100px;
+}
+.hitpoints{
+    left:50px;
+    position:absolute;
+    font-size: 25px;
+    font-family: cursive;
+}
+.scores{
+    right:50px;
+    position:absolute;
+    font-size: 25px;
+    font-family: cursive;
+}
+.last_correct{
+    font-family: "Times New Roman", Times, serif;
+    font-size:30px;
+    bottom: 50px;
+    right: 80px;
+    font-variant: small-caps;
+    position: absolute;
+}

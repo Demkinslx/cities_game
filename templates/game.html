@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Cities</title>
+</head>
+<body>
+{% block content %}
+<div class="game">
+  <form action="" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.csrf_token() }}
+    <div class = 'cityform'>{{ form.selected_city(style='font-size:25px') }}</div>
+    <div class = 'scores'>Счет:{{ scores }}</div>
+      <div class = 'hitpoints'>Осталось жизней:{{ hp }}</div>
+      <div class="submit_city_button">{{ form.submit_city.label }}</div>
+      <div class="btn">{{ form.submit_city }}</div>
+      <div class="message">{{ message }}</div>
+</form>
+</div>
+<div class="last_correct">Последний правильно угаданный город: {{last_correct}}</div>
+{% endblock %}
+</body>
+</html>
